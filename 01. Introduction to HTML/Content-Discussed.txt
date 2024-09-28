@@ -1,0 +1,23 @@
+## INTRODUCTION TO HTML
+
+<!--Boilerplate-->
+<!-- !+tab -->
+<!-- html:5 -->
+
+Code LINE |         Topic
+1         | <!--Notifies browser the version of html(here 5) and tells it to render file in html format-->
+2         | <!--HTML tag shows that from this to closing tag </html> between them html code will be there-->
+3         | <!--Holds information about the webpage-->
+4         | <!--Informs browser to encode webpage using uft-8 encoding system, uft-8 cover almost all languages around the world and does not show mojibake(weird characters) we webpage is opened-->
+6         | <!--name the webpage with title tag-->
+8         | <!--content of website--> 
+10        | <!--the h tag is for headers 1-6--> 
+10        | <!--b tag for bold-->  <!-- <br> br tag for break line -->
+11        | <!--p tag for paragraph and i tag for italics tip: i tag vs em tag  only diff is that em italicises and makes it bold to-->
+15        | <!--br is a self closing tag like hr tag as it has no closing tag like others-->
+16        | <!--horizontal line tag hr where hr is the html element and size,noshade are html attribute-->
+18        | <!--ul tag known as unordered tag helps show lists in an unorders fashin without numbering and stuff like -> or o -->
+19        | <!--li means list item-->
+25        | <!--ol tag known as inordered tag helps show lists in an ordered format like 1,2,3 or a,b,c-->
+35        | <!--a tag called anchor tag where href is html attribute after which we write text link like python which is a hyperlink though which we jump to other hyperlinks-->
+40        | <!--on wikipedia those blue color highlighted text is hyperlink which take to other webpages-->
