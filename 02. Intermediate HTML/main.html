@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html lang="en"> 
+    <head> 
+    <meta charset="UTF-8"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table,layout</title>
+</head>
+<body>
+    <table cellspacing = "20">
+        <tr> 
+            <td>
+                <img src = "images/Miyamoto Musashi.jpeg" alt="vagabond"  height="400px" width="400px">
+            </td>
+            <td>
+                <h1><b>Karrar Ahmed</b></h1>
+                <p><b><i>BS in Artificial Intelligence<br>Department of FCSE<br><strong>Ghulam Ishaq Khan Institute</strong></i></b></p>
+                <p><b>I am a student from GIKI Swabi, am persuing a career in the field of Artificial Intelligence <br>and am interested in Deep Learning, DevOps, Cloud Computing and Web Development</b></p>
+            </td>
+        </tr>
+    </table>
+    <br>    
+    <hr size="3" noshade>   
+   <h3><b><u>Education and Qualification</u></b></h3>
+    <ul>    
+       <li><b>GIKI</b>     
+            <ul>
+                <li>BS in Artificial Intelligence</li>
+            </ul>
+        </li>
+        <li><b>Bug School</b>
+            <ol>    
+                <li>Pre-Engineering</li>
+                <li>Science</li>
+            </ol>
+        </li>
+        <li><b>Error School</b></li>
+    </ul>
+    <hr size="3" noshade>
+    <h3><b>Experience</b></h3>
+    <table > <!--we can add border="1" or do padding through html but it is not recommended
+    to do styling with html as for that there is CSS thats why the red color comes on border="1" -->
+        
+        <thead> <!-- table 3 parts header body footer thead tag is for header for column titles-->
+            <tr> <!-- tr tag called table row is for a single row-->
+                <th>Year</th> <!-- th is for header, it bolds the text in this cell-->
+                <th>Role</th> <!-- one th or td tag occupies one cell-->
+            </tr>
+        </thead>
+        <tbody> <!-- tbody is where the rest of info about table resides-->
+            <tr>
+                <td>2020-</td>
+                <td>Lead Developer</td>
+            </tr>
+            <tr>
+                <td>2017-2019</td>
+                <td>Head of Regional Volunteers</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- this tag is for ending row-->
+            <tr>
+                <td>the footer with td tag</td>
+                <th>the footer with th tag</th>
+            </tr>
+        </tfoot>
+        
+    </table> <!-- table tag for creating tables -->
+    
+    <hr size="3" noshade>
+    <h3><b><u>Skills</u></b></h3>
+    <table border="1">  <!--created a single table with one row and made another table in each cell-->
+       <tr>
+        <td>
+            <table cellspacing = 5> <!-- as for cellspacing it can be used in html-->
+                    <tr>
+                        <td>C++</td>
+                        <td>* * * * *</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>* * * *</td>
+                    </tr>
+                    <tr>
+                        <td>PostgresSql</td>
+                        <td>* * * </td>
+                    </tr>
+            </table>
+        </td>
+        <td>
+            <table cellspacing = 5>
+                    <tr>
+                        <td>Reading</td>
+                        <td>* * * * *</td>
+                    </tr>
+                    <tr>
+                        <td>Sport</td>
+                        <td>* * * * * </td>
+                    </tr>
+                    <tr>
+                        <td>Hiking</td>
+                        <td>* * * * *</td>
+                    </tr>
+            </table>
+        </td>
+        </tr>
+    </table>
+    <hr size="3" noshade>
+    <h3><b>Contact Me:<a href="contacts.html"> Click</a></b></h3>
+    
+</body>
+</html>
