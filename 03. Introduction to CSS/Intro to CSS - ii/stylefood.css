@@ -1,0 +1,41 @@
+/* previously we had been styling with the help of tag/element selector but know
+we will using class as it helps to style img seperately and we will better differentiate
+similar tags as it is useful */
+
+/* ---------------- TAG SELECTORS ------------- */
+body {
+    background-color: lightblue;
+}
+h1 {
+    color:cornflowerblue;
+}
+h3 {
+    color: aquamarine;
+}
+img:hover{ /*CSS Pseudo Class activates whenever we use the cursor and hover over the webpage and 
+in this state we can still style the html elements, and through using : (semicolon) we can style the Pseudo Classes*/
+    background-color: purple;
+}
+
+/* --------------- CLASS SELECTORS ------------ */
+/* after the . (dot) the name of class comes but have to be careful with correct naming */
+.cheese {
+    color : yellow;
+    border-radius:100%;
+}
+
+.burger {
+    background-color: tomato;
+}
+.circular {
+    border-radius:10%;
+}
+
+/* -------------- ID SELECTORS -------------- */
+/* for this selector we start by #idname  */
+#burgerid {
+    color:yellowgreen;
+}
+#cheesechant {
+    color :brown;
+}

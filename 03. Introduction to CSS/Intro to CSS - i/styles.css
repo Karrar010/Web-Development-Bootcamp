@@ -1,0 +1,25 @@
+/* This type of styling is called the external css as there is a seperate file for this styling
+and can be accessed via a link tag */
+
+/* pro tip: when doing styling always know the heirarchy of styling, when we style something like
+we chnage background-color: blue through all types of css the heirarchy will be in this manner
+inline CSS > internal CSS > External CSS. So most precedence will be given to inline CSS*/
+
+/* basic syntax: selector {property: value;} */
+
+body {
+    background-color: oldlace;
+}
+hr {
+    background-color: oldlace;
+    border-style:none;
+    border-top-style: dotted;
+    border-width: 5px;
+    width:5%;
+}
+h1 {
+    color: #de599e;
+}
+h3 {
+    color: #66BFBF;
+}

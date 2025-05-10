@@ -1,0 +1,121 @@
+<!DOCTYPE html>  
+<html lang="en"> 
+    <head> 
+    <meta charset="UTF-8"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for CSS styling</title>
+    <link rel="stylesheet" href="styles.css"> <!--this link tag speifies the relationship of stylesheets between index.html and style.css file-->
+    <!--through this the browser identifies that this file styles.css acts as the stylesheet for index file-->
+</head>
+
+<style> /* this type of styling is called internal CSS as we use the style tag for styling
+        it is better then inline CSS but it does have its flaws, when we click on contacts(click) we get the file with no styling
+        so to over come this issue we use the External CSS
+    /* body{
+        background-color: oldlace:
+    } */
+    /* hr {
+        background-color: oldlace;
+        border-style:none;
+        border-top-style: dotted;
+        border-width: 5px;
+        width:5%;
+    } */
+</style>
+
+<body > <!--style="background-color: oldlace;": this type of styling is called inline CSS where we use style attribute for styling-->
+    <table cellspacing = "20">
+        <tr> 
+            <td>
+                <img src = "Miyamoto Musashi.jpeg" alt="vagabond"  height="400px" width="400px">
+            </td>
+            <td>
+                <h1><b>Karrar Ahmed</b></h1>
+                <p><b><i>BS in Artificial Intelligence<br>Department of FCSE<br><strong>Ghulam Ishaq Khan Institute</strong></i></b></p>
+                <p><b>I am a student from GIKI Swabi, am persuing a career in the field of Artificial Intelligence <br>and am interested in Deep Learning, DevOps, Cloud Computing and Web Development</b></p>
+            </td>
+        </tr>
+    </table>
+    <br>    
+    <hr size="3" noshade>   
+   <h3><b><u>Education and Qualification</u></b></h3>
+    <ul>    
+       <li><b>GIKI</b>     
+            <ul>
+                <li>BS in Artificial Intelligence</li>
+            </ul>
+        </li>
+        <li><b>AKHSSS</b>
+            <ol>    
+                <li>Pre-Engineering</li>
+                <li>Science</li>
+            </ol>
+        </li>
+        <li><b>MIED School</b></li>
+    </ul>
+    <hr size="3" noshade>
+    <h3><b>Experience</b></h3>
+    <table cellspacing="10">
+        
+        <thead> 
+            <tr>
+                <th>Year</th> 
+                <th>Role</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2020-2024</td>
+                <td>Lead Developer at MyCompany</td>
+            </tr>
+            <tr>
+                <td>2017-2019</td>
+                <td>Head of Regional Volunteers</td>
+            </tr>
+        </tbody>
+        
+    </table> 
+    
+    <hr size="3" noshade>
+    <h3><b><u>Skills</u></b></h3>
+    <table border="1"> 
+       <tr>
+        <td>
+            <table cellspacing = 5> 
+                    <tr>
+                        <td>C++</td>
+                        <td>⭐ ⭐ ⭐ ⭐ ⭐</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>⭐ ⭐ ⭐ ⭐ ⭐</td>
+                    </tr>
+                    <tr>
+                        <td>PostgreSql</td>
+                        <td>⭐ ⭐ ⭐ ⭐</td>
+                    </tr>
+            </table>
+        </td>
+        <td>
+            <table cellspacing = 5>
+                    <tr>
+                        <td>Reading</td>
+                        <td>🔥 🔥 🔥 🔥 🔥</td>
+                    </tr>
+                    <tr>
+                        <td>Sport</td>
+                        <td>🔥 🔥 🔥 🔥 🔥</td>
+                    </tr>
+                    <tr>
+                        <td>Hiking</td>
+                        <td>🔥 🔥 🔥 🔥 🔥 </td>
+                    </tr>
+            </table>
+        </td>
+        </tr>
+    </table>
+    <hr size="3" noshade>
+    <h3><b>Contact Me:<a href="contact.html"> Click</a></b></h3>
+    
+</body>
+</html>
