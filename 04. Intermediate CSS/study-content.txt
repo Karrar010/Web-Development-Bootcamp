@@ -1,0 +1,62 @@
+<!-- --------CSS DISPLAY TYPES--------- -->
+
+<!-- Whenever we display any element on a website it occupies a certain space on the webpage and bc of this occupying space we categories 
+elements .
+i.e: 1. Block Element 2. Inline Display Element 3. Inline Block Element 4. None
+
+1. Block Element: the elements which occupy a complete single line of the webpage like <h1--h6> , <p> , <div> , list=<ol>,<ul>,<li> , <form>
+-> In this single line no other element can be positioned and occupy space except for inline element
+
+2. Inline Element: these elements take space up space as much as it needs to in height and width and can be easily positioned together
+but we cannot change the width of such elements unlike block elements whose width we can change. e.g: <span> , <img>, <a> ,<u>
+
+3. Inline-Block Element: this is a combinition of both block and inline properties here we can change the widths of elements and can 
+position them together side by side like in inline elements. e.g: <img> are by default like inline-block
+
+4. None : through this display method we can hide or remove an element from the line and this also removes the space that the element 
+previously occupied and another element can occupy this new spae. (similar to this is a property can visibility:hidden 
+through which we can make some element invisible but another element cannot occupy this new space ) 
+
+Tip: In CSS we can change the display property of any element by display: block,inline,inline-block,none-->
+
+
+
+/*---------- CSS Positioning -----------*/
+
+/* By Default there are 3 properties CSS always follows when positioning 
+1. Content is Everything: if the size of content is high then larger spae will be occupoed like h1 will occupy more space as compared to h6
+2. Order is Important: As headers always are coded before paragraphs so there will be shown first on screen and paragraph <p> later
+3. Children sit on Parents: when we write something inside another element it occupies small space inside the body of the previous element
+like inside div in html at line 32 we have <h1> and <p> inside it
+
+But we can change the Positioning of element ourselves like 
+1. position: static      -->which follows the default method as told before or we could change it to 
+
+2. position : relative   --> after this we have to use and change the coordinate properties like left: , right: , top: , bottom: 
+to shift element to given pixels. Note that this only positions the appropriate html element other will not be effected 
+
+3. position: absolute  -->through this elements(lets say red) are positioned wrt the parent element(like a body) and when position is changed 
+with this the area where the element was previously can be occupied by another element(like blue) as if the red was never their and at left and
+right edges when right: or left: property is used then elements move to the complete opposite side of the screen. 
+
+4. position: fixed    --> this helps fixing an element on the screen even after scrolling it is visibleand can be used for 
+showing a navigation bar or side bar on website */
+
+
+/*------------ CSS Font Styling ---------------*/
+
+/* to style the text inside our webpage we use this property, we mostly style using serif,san-serif or 
+monospace(equal space for each char e.g code)and another way is to write diff text style together seperated by commas and this is helpful
+when user doesnt have one type text style then it falls back to the next. lastly another way is by font-embedding in index.html file  */
+
+
+/*------------ CSS SIZING -------------------*/
+
+css font sizing can be done either by static or dynamic sizing, static sizing involve having size in pixel form like font-size: 90px;
+dynamic sizing involves the sizing in either percentage(font-size:100%) or em (size of M (diff to <em> emphasis tag)) and when we size 
+in dynamic way, it always inherits from the parent elements sizing like if parent element(body) font-size: 2em then we write h1(Children element) 
+font-size: 2em then the font size of h1 will not be 2em it will be 2(2em)= 4em as it inherits from parent.
+NOTE: 16px = 100% = 1em (so 2em is 32px and 4em will be 64px)
+-> but to avoid this inherit issue CSS-3 has a new property value called rem which means root em which removes the inheritance concept
+and sizing the h1 according to only its font-size: 2em
+(Angela Yu has recommended followinf the rem method when font-sizing)

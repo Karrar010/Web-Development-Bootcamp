@@ -1,0 +1,167 @@
+body {
+    margin:0 0 0 0;
+    text-align: center;/* text-align: center can be used to center all elements present inside the body which acts as parent for all elements
+    inside it.But if we change the width of an element we wont be able to center it through this method for it we use margin method in h1 {}*/
+    color:  #40514E;
+    font-family: 'Merriweather',serif;/* read about it in study-content or wath vid 11, 12 */
+
+    /* font-size: 1em;*/ /* read about it in study-content or watch vid 13. css sizing */
+}
+p {
+    line-height: 2; 
+    /* gap between text in paragraph */
+}
+h1 {
+    color: #66BFBF;
+    margin: 50px auto 0;/*seperates top from h1 by 50px and keeps horizontal center and sets margin-bottom: 0, since h1 and h2 should be close*/    
+     /*Centering: In margin method we can center element in two ways the first is to center horizontally and the other is to center vertically */
+    /* width: 50px;  */
+    /* height: 50px;   */
+    /* margin: 0 auto 0 auto; for horizontal centering we set margin top and bottom to 0 and left right to auto */
+    /* margin: auto 0 auto 0; for vertical centering we set the top and bottom margin to be set at auto and others at 0 */
+    font-family: 'Sacramento' , cursive;/* read about it in study-content or wath vid 11, 12 */
+    font-size: 5.625rem; /* since we want size of header1 to be 90px and in em form it is 90px/16px = 5.625em */
+
+    /* line-height: 2; challenge2: sets amount of space used for lines, 1 is in default so we set it to 2 */
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal; /*css property specifies the weight(or boldness) of font, normal means that we remove the boldness of subheader
+    and de-emphasize it. font-weight:bold is added to bold the text*/
+    color: #66BFBF; 
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+a {
+    color: #11999E;
+}
+.top-container {
+    padding-top: 90px;
+    background-color:#E4F9F5;
+}
+
+.cloud-one {
+    position: absolute;
+    left: 1100px;
+    top: 50px; 
+}
+
+.cloud-two {
+    width:250px;
+    position: absolute;
+    right: 1000px;
+    bottom: 200px;
+}
+
+.mountain {
+    width: 600px;
+    height: 360px;
+}
+
+hr {
+    margin-block-start: 30px; /*this seperate the previous element fromt the horizontal line by size of 30px*/
+    border-style: none ; /*this remove all style a border has*/
+    border-top-style: dotted; /*keeps the top border dotted*/
+    border-width: 7px ; /*change the width interms of size of border */
+    width: 5%;/*change the width interms of length*/
+    color: #aab3b3; /*color of horizontal line*/
+    margin-bottom: 50px;
+}
+.profile {
+    margin-top: 20px;
+}
+.greet {
+    margin-top: 5px;
+}
+.skill-row {
+    width: 50%;
+    margin: 50px auto 100px; /*horizontal centering with top and bottom at 100px*/
+    text-align: left;
+    line-height: 2; /* sets amount of space used for lines, 1 is in default so we set it to 2*/
+}
+.cheese-img {
+    margin-right: 30px; /* used to have spae between text and img */
+    width: 25%;
+    float: left; 
+    /* float is element used to float an element(here img) corresponding to the parent(here skill-row which is a div) toward certain position 
+    left, right etc through this text surrounding element is wrapped around it*/
+}
+.code-img {
+    margin-left: 30px;
+    width: 25%;
+    float: right;
+}
+/* .cheese-description {
+    clear: left;
+    /*using clear property we can remove certain text out of wraping around other elements, so clear can be thought as the anti-float  
+    and clear: left means that the element(here <p>) should not have anything on its left
+}*/
+
+footer {
+    background-color: #66BFBF;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+a {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    color: #11999E;
+}
+.footer-link {
+    margin-right: 30px;
+}
+.right-to-website {
+    color: #EAF6F6;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.intro-outro {
+    width: 30%;
+    margin: auto;
+}
+/* ------------------------------------------------------------------------------------------------- */
+.BUTTON_LDX {
+    background: #11B4B4;
+    background-image: -webkit-linear-gradient(top, #11B4B4, #21E0E0);
+    background-image: -moz-linear-gradient(top, #11B4B4, #21E0E0);
+    background-image: -ms-linear-gradient(top, #11B4B4, #21E0E0);
+    background-image: -o-linear-gradient(top, #11B4B4, #21E0E0);
+    background-image: -webkit-gradient(to bottom, #11B4B4, #21E0E0);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    height: 15px;
+    line-height: 15px;
+    color: #FFFFFF;
+    font-family: Trebuchet MS;
+    width: 130px;
+    font-size: 21px;
+    font-weight: 100;
+    padding: 14px;
+    -webkit-box-shadow: 1px 1px 20px 0 #66BFBF;
+    -moz-box-shadow: 1px 1px 20px 0 #66BFBF;
+    box-shadow: 1px 1px 20px 0 #66BFBF;
+    text-shadow: 1px 1px 20px #66BFBF;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .BUTTON_LDX:hover {
+    border: solid #337FED 1px;
+    background: #2EAADB;
+    background-image: -webkit-linear-gradient(top, #2EAADB, #00A4FB);
+    background-image: -moz-linear-gradient(top, #2EAADB, #00A4FB);
+    background-image: -ms-linear-gradient(top, #2EAADB, #00A4FB);
+    background-image: -o-linear-gradient(top, #2EAADB, #00A4FB);
+    background-image: -webkit-gradient(to bottom, #2EAADB, #00A4FB);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+ }
