@@ -1,0 +1,164 @@
+body{
+    text-align: center;
+}
+
+h1 , h2, h3{
+    font-family: "Montserrat-Black", "Montserrat";
+    font-weight: 900; /*since montserrat-black was not working*/
+}
+h1{
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2{
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 900; /*since montserrat-black was not working*/
+}
+
+
+p{
+    color: #8f8f8f;
+}
+
+/*NAV BAR Section*/
+
+.container-fluid{ 
+    padding: 3% 15%;
+}
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand{
+    font-family:"Ubuntu" ;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding-right: 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: "Montserrat-Light";
+}
+
+.collapse{
+    margin-left: 50%;
+}
+
+/* Title Section */
+
+.download-btn{
+    margin: 5% 3% 5% 0;
+}
+
+#title{
+    text-align: left;
+    /* z-indexing of image*/
+    padding-bottom: 5%;
+}
+.title-img{
+    transform: rotate(25deg);
+    /* for z indexing there should always be a value of position set else z-index doesnt work */
+    position: absolute;
+}
+@media (max-width: 995px) {
+    #title{
+        text-align: center;
+    }
+    .title-img{
+        transform: rotate(0deg);
+        position: static;
+    }
+    
+}
+/* Section Coloring*/
+
+.white-section{
+    background-color: #ffff;
+}
+.colored-section{
+    background-color:#ff4c68;
+    color: #ffff;
+}
+
+/*Features Section */
+
+#features{
+    padding: 10% 15%;
+    position: relative;
+    z-index: 1;
+}
+.features-website{
+    padding: 5%;
+}
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: #ff4c68;
+    margin-bottom: 1rem;
+}
+
+/*Testimonial Section*/
+
+#testimonials{
+    background-color:#ef8172;
+    color: #ffff;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+.testimonial-img{
+    width: 10%;
+    border-radius: 100% ;
+    margin: 20px;
+}
+#press{
+    background-color:#ef8172;
+    padding-bottom: 3%;
+}
+.press-logo{
+    width:15%;
+    margin: 20px,20px,50px;
+}
+
+/* PRICING  Section*/
+
+#pricing{
+    padding: 100px;
+}
+.pricing-p{
+    padding-bottom: 100px;
+}
+.pricing-btn{
+    width: 200px;
+}
+.pricing-card{
+    padding-top: 20px;
+}
+
+/* CALL TO ACTION Section*/
+
+#cta{
+    padding: 7%  40px;
+}
+.cta-header{
+    width: 60%;
+    margin: auto;
+}
+
+/* Footer Section */
+
+#footer{
+    padding: 7% 15%;
+}
+.footer-link{
+    margin: 10px;
+}

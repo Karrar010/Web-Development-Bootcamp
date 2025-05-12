@@ -1,0 +1,101 @@
+<!-- Media query: it is a CSS functionality for making webpage responsive across all devices
+details are in the styles.css file -->
+
+/* <<<<<<---- RESPONSIVE WEBSITE THROUGH CSS ---->>>>>> */
+/* we can make a website responsive by using frameworks like Bootstrap
+but we can do the same by using native CSS functionalities like MEDIA QUERIES */
+
+/* structure of media query: @media <type> <feature> */
+/* through this we can set properties of our website different under certain conditions
+like: this code will be activated if website is printed, here there is no feature, but if there was 
+a feature role is like a condition which gives True,False values
+@media print {  this is a media query breakpoint
+    h1{
+        color: blue;
+    }
+    
+} this would mean that when we print our webpage the h1 color will be printed with color blue
+
+-> Similar since responsive means that webpage should be reponsive in all devices
+then we need use media query for this::
+here it means that when screen width is less than or equal to 900 in width then h1 will have color red
+@media (max-width: 900px){
+    h1{
+        color: red;
+    }
+}*/
+
+
+--->>>  Combining Selectors
+In css to simplify our code and make it more readable and efficient we can combine selectors together for styling
+(Selectors can be html elements , classes , ids)
+
+1. Multiple Selectors: here element selectors are combined using a comma between them
+SYNTAX:
+    selector1(like h1) , selector2(like h2) {
+
+    }
+
+2. Heirarchical Selectors: selectors are combined in a heirarchical manner seperated by a space
+from a Parent to Child otherwise this combination doesnot work if heirarchy is not followed
+SYNTAX:
+    selector1(#title) selector2(.container) { #here id = title should act as parent inside the html code and class= container as child
+
+    }
+if in html
+    <div id= title>
+        <div class= container>
+        <div>
+    <div>
+then in CSS this will not work
+    .container #title {  # as here heirarchy is not followed
+
+    }
+3. Combined Selectors: here html element selectors are combined with class or id selectors, which are present inside the selector1
+and there is no space between the selectors
+SYNTAX:
+    selector1selector2 {
+
+    }
+if html code is
+    <div class = container>
+        <h1 id= title>header1</h1>
+then in css this will not work
+    div#title {
+
+    }
+this will work
+    div.container{
+
+    }
+
+
+----->>>>> Selector Priority <<<<<------
+
+selectors can be a html element, or a class or an id
+
+and Priority of classes is like ID > CLASS > HTML ELEMENT 
+
+if html code is:
+
+<h1 class= "class" , id = "id" > hello </h1>
+
+if CSS code is like:
+
+h1{
+    color: red;
+}
+.class{
+    color: green;
+}
+#id{
+    color: blue;
+}
+then by following the selector Priority we get the 
+hello color to be blue, since ids have the highest Priority
+
+AND IF HTML CODE
+
+<h1 class= "class" , id = "id" style= "color: orange;" > hello </h1>
+
+then even this internal CSS will have higher Priority than external CSS(id,classes,elements)
