@@ -1,0 +1,93 @@
+#title{
+    background-color:#ff4c68;
+    color: #ffff;
+}
+
+.container-fluid{
+    padding: 3% 15%;
+}
+
+h1{
+    font-family: "Montserrat-Black", "Montserrat";
+    font-weight: 900; /*since montserrat-black was not working*/
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand{
+    font-family:"Ubuntu" ;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding-right: 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: "Montserrat-Light";
+}
+
+.collapse{
+    margin-left: 50%;
+}
+
+.title-img{
+    width: 60%;
+    transform: rotate(25deg);
+}
+
+.download-btn{
+    margin: 5% 3% 5% 0;
+}
+
+/* ------------challenge----------- */
+#features{
+    padding: 7% 15%;
+}
+.features-website{
+    text-align: center;
+    /* margin: auto auto; */
+    padding: 5%;
+}
+h3{
+    font-family: "Montserrat";
+    font-weight: 900; /*since montserrat-black was not working*/
+}
+p{
+    color: #8f8f8f;
+}
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: #ff4c68;
+    margin-bottom: 1rem;
+}
+#testimonials{
+    background-color:#ff4c68;
+}
+#press{
+    background-color:#ff4c68;
+}
+#cta{
+    background-color:#ff4c68;
+    text-align: center;
+    padding: 50px 50px;
+    color: #ffff;
+}
+.cta-header{
+    width: 60%;
+    margin: auto;
+}
+
+#footer{
+    text-align: center;
+    margin: 50px auto 50px;
+}
