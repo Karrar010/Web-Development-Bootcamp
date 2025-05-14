@@ -1,0 +1,109 @@
+############################################### Introduction to Javascript  ###########################################################
+
+It is language that is used all across the web and is a language with add functionality to our system
+
+###################### Chrome Developer Tool ###############################3
+when ctrl+shft+j is pressed it moves towards the Chrome console to run .js code and in console single line instruction is possible and 
+with shft+enter we can run multple line code in console, but in Sources->Snippet we can create a new script.js file and can code in .js 
+without any issue.
+E.g:
+// Unlike Python here we can add semicoloon  ; to end the line of code
+// While they are not always required, it is considered good practice to include them to avoid potential errors.
+
+// alert("alert");  // It is a popup dailog which optional text and ok button
+// alert("hello world!")
+alert("1"+"9 "+"12"*21)     // String Concatenation
+// var myname = prompt("NAME PLEASE: ")     // var myname is for variable declaration, this var keyword tells that we are creating a new variable
+// alert("Hi, my name is " +myname+"; hello world")
+// var my$123_name = 1            // Naming of variables should be proper, in Javascript we name using camel casing
+var yrname = prompt("Enter name: ")      // prompt is an Input function and
+alert("Hello"+" "+yrname)
+
+// // ------------------- Challenge: Find length of string -------------------- 
+// var my_text = prompt("Text Content: ");
+// var text_count = my_text.length;     // every string has a property length
+// alert("Your have written "+text_count+", you have now "+(280-text_count)+" left.");
+
+// //------------------ Challenge: Use  slice function and limit the my_text to be uptill size 280 (chars) --------------------
+// sliced_text = my_text.slice(0,280); // since from 0 to 279 there it has 280 char
+// alert("Your text has "+sliced_text.length+" characters");
+// alert(sliced_text)
+
+// -------------------- Challenge: Change the Casing of Text -->> By changing the first letter of text to Caps ----------------------
+// var input_name = prompt("Name");
+// // name.toUpperCase();
+// // name.toLowerCase();
+// var length_input_name = input_name.length
+// var input_name_after_first_letter = input_name.slice(1,length_input_name).toLowerCase() // we also add toLowerCase func in case input is like "aHMED"
+// alert("Hello , "+ input_name.slice(0,1).toUpperCase()+input_name_after_first_letter);
+
+################## Working with Numbers (Arithmetic Operations) ######################
+// var div = 6/2; // 3
+var div = 6/ 4;
+var add = 1+5;
+var sub = 10-2;
+var mul = 11*11;
+var modulo = 21%12;
+alert(div+","+add+","+sub+","+mul+","+modulo)
+
+################## If an line contains multiple operations, then it will follow BODMAS rule and will get to solv ##################
+// B = brackets/parenthesis , O = Exponential , DM = division,multiplication from left side to right 
+, AS = add, sub from left side to right
+var multi_operations = (3+3)*10/3-4**2 // (6)*10/3-4**2 -> (6)*10/3-(16) ->(60)/3-16 -> 20-16 -> 4
+alert(multi_operations)
+
+##################  Dog age to Human age formula ###################
+var dog_age = prompt("Enter Dog Age")
+var Human_age = (dog_age-2)*4+21
+alert("Your dog is "+Human_age+" years old in human age");
+
+################# Increment Decrement ###################
+var Increment_val = 5
+Increment_val++;
+Increment_val+=2;
+alert(Increment_val);
+
+var Decrement_val = 5;
+--Decrement_val;
+Decrement_val--;
+alert(Decrement_val)
+
+
+//############################# FUNCTIONS IN JAVASCRIPT ################################
+// Syntax:
+// function nameFunction(){ // creating function and naming in camelCase
+    // some code 
+// }
+// nameFunction() //calling the function
+
+// function getMilk(){
+//     alert("Move out of House");
+//     alert("Go to the Grocery Shop");
+//     alert("Buy a Box of Milk");
+//     alert("return Home")
+// }
+// getMilk();
+
+// When alert is used we constantly have to press the ok button when popup dailog comes
+// But instead of alert we can use the console.log() as it displays the instruction inside of the console
+// console.log result is seen in console and is only meant for the developer but alert can also be seen by the User whose using the website
+function getMilk(){
+    console.log("Move out of House");
+    console.log("Go to the Grocery Shop");
+    console.log("Buy a Box of Milk");
+    console.log("return Home")
+}
+getMilk();
+
+// Functions with Parameters/Argements and return values
+function costMilk(bottles){
+    var totalCost = math.round(bottles*1.7); // 3.4 will be rounded to 3 if it was 3.5 then it would have been rounded to 4
+    console.log(totalCost); // so totalCost is 3
+    return "Donot forget the change";
+}
+costMilk(2); // for this func call the return value will not be shown in console as return value is not stored in a variable
+// to show the return value we can also use the console
+console.log(costMilk(2));
+
+var change = costMilk(2); // for this we get return value as it will be stored in a variable
+console.log(change)
